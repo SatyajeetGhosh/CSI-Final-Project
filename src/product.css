@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.products{
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.products h2{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: black;
+}
+
+.products .container{
+    margin-top: 20px;
+    display: flex;
+    gap: 2em;
+}
+
+.products .container .filter .categories h3{
+    color: #e44c8c;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.products .container .filter .categories ul li{
+    margin-top: 1.3em;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.products .container .filter .categories ul li:hover{
+    color:#e44c8c;
+}
+
+.products .container .productbox .cont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 0 2em;
+}
+
+.products .container .productbox .cont .box{
+    padding: 40px 20px;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 1em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #e2e0e0;
+}
+
+.products .container .productbox .cont .box:hover{
+    transform: scale(1.03);
+}
+
+.products .container .productbox .cont .box .img-box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e44c8c;
+    margin-bottom: 1em;
+}
+
+.products .container .productbox .cont .box .img-box img{
+    width: 200px;
+    height: 200px;
+}
+
+.products .container .productbox .cont .box .img-box .icon span{
+    cursor: pointer;
+    border: 2px solid #e44c8c;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #e44c8c;
+    transition: all 0.25s ease;
+}
+
+.products .container .productbox .cont .box .img-box .icon span:hover{
+    background-color: #e44c8c;
+    color: white;
+}
+
+.products .container .productbox .cont .box .detail p{
+    color: #9a9a9a;
+    font-size: 0.9em;
+}
+
+.products .container .productbox .cont .box .detail h3{
+    color: #e44c8c;
+    font-size: 1.1rem;
+}
+
+.product-detail{
+    padding: 3em;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    display: flex;
+}
+
+.product-detail .container{
+    margin: auto;
+    background-color: white;
+    padding: 3em;
+    border-radius: 1em;
+    width: 700px;
+    /* height: 400px; */
+}
+
+.product-detail .container .close-btn{
+    border: 2px solid #e44c8c;
+    outline: none;
+    background-color: white;
+    color: #e44c8c;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 100%;
+}
+
+.product-detail .container .close-btn:hover{
+    background-color: #e44c8c;
+    color: white;
+}
+
+.product-detail .container .productbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.product-detail .container .productbox .detail{
+    align-self: flex-start;
+}
+
+.product-detail .container .productbox .detail h4{
+    color: #9a9a9a;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.product-detail .container .productbox .detail h2{
+    color: #e44c8c;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.product-detail .container .productbox .detail p{
+    color: #9a9a9a;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.product-detail .container .productbox .detail .add-to-cart-btn{
+    margin-top: 1em;
+    border: 2px solid #e44c8c;
+    outline: none;
+    background-color: white;
+    color: #e44c8c;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.product-detail .container .productbox .detail .add-to-cart-btn:hover{
+    color: white;
+    background-color: #e44c8c;
+}
+
+.product-detail .container .productbox .img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

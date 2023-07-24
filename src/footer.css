@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+.footer{
+    padding: 30px 40px;
+    width: 100%;
+    /* background-color: #ecf2f7; */
+    border-top: 2px solid #B4006E;
+}
+
+.footer .container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .about{
+    padding: 0;
+    max-width: 35%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer .container .about .detail p{
+    margin-bottom: 1em;
+}
+
+.footer .container .about .detail .icon{
+    display: flex;
+    gap: 1em;
+}
+
+.footer .container .about .detail .icon span{
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.footer .container .about .detail .icon span:hover{
+    color: #B4006E;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.footer .container .about .logo img{
+    width: 100px;
+}
+
+.footer .container .account h3, .footer .container .page h3{
+    margin-bottom: 0.5em;
+    color: #B4006E;
+    font-size: 1.4rem;
+}
+
+.footer .container .account ul li:hover, .footer .container .page ul li:hover{
+    color: #B4006E;
+    cursor: pointer;
+}
